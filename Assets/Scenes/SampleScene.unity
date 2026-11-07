@@ -340,6 +340,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 176352694}
+  - component: {fileID: 176352699}
   - component: {fileID: 176352698}
   - component: {fileID: 176352697}
   - component: {fileID: 176352696}
@@ -414,19 +415,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 176352696}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 176352698}
-        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: PlayOneShot
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 8300000, guid: 6696f5a4a7522744a9d1abd8d6703ca6, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &176352696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -561,6 +550,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &176352699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 176352693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b7b182ec6dc4ba4f96fa1f08452fa8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _button: {fileID: 176352695}
+  _audioSource: {fileID: 176352698}
 --- !u!1 &240906945
 GameObject:
   m_ObjectHideFlags: 0
@@ -606,6 +609,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 244279921}
+  - component: {fileID: 244279923}
   - component: {fileID: 244279922}
   m_Layer: 5
   m_Name: Master Slider
@@ -686,19 +690,22 @@ MonoBehaviour:
   m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 979683339}
-        m_TargetAssemblyTypeName: PausePanel, Assembly-CSharp
-        m_MethodName: OnMasterChanged
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+--- !u!114 &244279923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 244279920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 189a4e17a04d3c04699f38caad7466bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _slider: {fileID: 244279922}
+  _mixer: {fileID: 24100000, guid: 009e36149e247b44b8683e39ae0a6178, type: 2}
+  _mixerParameter: MasterVolume
 --- !u!1 &350742920
 GameObject:
   m_ObjectHideFlags: 0
@@ -842,6 +849,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 423402294}
+  - component: {fileID: 423402299}
   - component: {fileID: 423402298}
   - component: {fileID: 423402297}
   - component: {fileID: 423402296}
@@ -916,19 +924,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 423402296}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 423402298}
-        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: PlayOneShot
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 8300000, guid: 7971cc3a1982da147b572e54085314f6, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &423402296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1063,6 +1059,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &423402299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 423402293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b7b182ec6dc4ba4f96fa1f08452fa8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _button: {fileID: 423402295}
+  _audioSource: {fileID: 423402298}
 --- !u!1 &455885835
 GameObject:
   m_ObjectHideFlags: 0
@@ -1573,6 +1583,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 849507859}
+  - component: {fileID: 849507861}
   - component: {fileID: 849507860}
   m_Layer: 5
   m_Name: Music Slider
@@ -1653,19 +1664,22 @@ MonoBehaviour:
   m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 979683339}
-        m_TargetAssemblyTypeName: PausePanel, Assembly-CSharp
-        m_MethodName: OnMusicChanged
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+--- !u!114 &849507861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 849507858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 189a4e17a04d3c04699f38caad7466bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _slider: {fileID: 849507860}
+  _mixer: {fileID: 24100000, guid: 009e36149e247b44b8683e39ae0a6178, type: 2}
+  _mixerParameter: MusicVolume
 --- !u!1 &943489842
 GameObject:
   m_ObjectHideFlags: 0
@@ -1750,7 +1764,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 979683336}
-  - component: {fileID: 979683339}
   - component: {fileID: 979683338}
   - component: {fileID: 979683337}
   m_Layer: 5
@@ -1822,19 +1835,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 979683335}
   m_CullTransparentMesh: 1
---- !u!114 &979683339
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 979683335}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eda26559585a900468f4308bd68ce7d0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _mixer: {fileID: 24100000, guid: 009e36149e247b44b8683e39ae0a6178, type: 2}
 --- !u!1 &979761257
 GameObject:
   m_ObjectHideFlags: 0
@@ -2628,9 +2628,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1575104148}
+  - component: {fileID: 1575104150}
   - component: {fileID: 1575104149}
   m_Layer: 5
-  m_Name: Toggle
+  m_Name: Mute Toggle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2703,20 +2704,21 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 979683339}
-        m_TargetAssemblyTypeName: PausePanel, Assembly-CSharp
-        m_MethodName: ToggleMasterVolume
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_IsOn: 0
+--- !u!114 &1575104150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575104147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ad7a9757772d234e8383f0b535db78a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _toggle: {fileID: 1575104149}
 --- !u!1 &1681232780
 GameObject:
   m_ObjectHideFlags: 0
@@ -2726,6 +2728,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1681232781}
+  - component: {fileID: 1681232786}
   - component: {fileID: 1681232785}
   - component: {fileID: 1681232784}
   - component: {fileID: 1681232783}
@@ -2800,19 +2803,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1681232783}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1681232785}
-        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: PlayOneShot
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 8300000, guid: 141d352d437b1b74cb8c6f0a96a21319, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1681232783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2947,6 +2938,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1681232786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1681232780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b7b182ec6dc4ba4f96fa1f08452fa8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _button: {fileID: 1681232782}
+  _audioSource: {fileID: 1681232785}
 --- !u!1 &1715674081
 GameObject:
   m_ObjectHideFlags: 0
@@ -3533,6 +3538,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2050205581}
+  - component: {fileID: 2050205583}
   - component: {fileID: 2050205582}
   m_Layer: 5
   m_Name: Buttons Slider
@@ -3613,19 +3619,22 @@ MonoBehaviour:
   m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 979683339}
-        m_TargetAssemblyTypeName: PausePanel, Assembly-CSharp
-        m_MethodName: OnUIChanged
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+--- !u!114 &2050205583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2050205580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 189a4e17a04d3c04699f38caad7466bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _slider: {fileID: 2050205582}
+  _mixer: {fileID: 24100000, guid: 009e36149e247b44b8683e39ae0a6178, type: 2}
+  _mixerParameter: UIVolume
 --- !u!1 &2059670427
 GameObject:
   m_ObjectHideFlags: 0
